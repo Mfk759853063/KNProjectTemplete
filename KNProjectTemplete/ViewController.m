@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.kn_navigationBar.titleLabel.text = @"Hello World";
+    self.kn_navigationBar.title = @"Hello World";
     self.view.backgroundColor = [UIColor redColor];
 }
 
