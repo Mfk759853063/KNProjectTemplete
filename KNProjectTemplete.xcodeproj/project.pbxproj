@@ -17,7 +17,6 @@
 		012B2E2A1C0FF17100330411 /* KNNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B2E201C0FF17100330411 /* KNNavigationBar.m */; };
 		012B2E2B1C0FF17100330411 /* KNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B2E221C0FF17100330411 /* KNNavigationController.m */; };
 		012B2E2C1C0FF17100330411 /* KNNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B2E251C0FF17100330411 /* KNNavigationItem.m */; };
-		012B2E2D1C0FF17100330411 /* navigationbar_filter_background_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 012B2E261C0FF17100330411 /* navigationbar_filter_background_highlighted@2x.png */; };
 		012B2E2E1C0FF17100330411 /* UIViewController+KNNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B2E281C0FF17100330411 /* UIViewController+KNNavigation.m */; };
 		012B2E311C0FF1EC00330411 /* UIView+GHYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B2E301C0FF1EC00330411 /* UIView+GHYView.m */; };
 		012B2E341C0FF29900330411 /* KNNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B2E331C0FF29900330411 /* KNNetworkManager.m */; };
@@ -45,7 +44,6 @@
 		012B2E231C0FF17100330411 /* KNNavigationDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNNavigationDefines.h; sourceTree = "<group>"; };
 		012B2E241C0FF17100330411 /* KNNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNNavigationItem.h; sourceTree = "<group>"; };
 		012B2E251C0FF17100330411 /* KNNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNNavigationItem.m; sourceTree = "<group>"; };
-		012B2E261C0FF17100330411 /* navigationbar_filter_background_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar_filter_background_highlighted@2x.png"; sourceTree = "<group>"; };
 		012B2E271C0FF17100330411 /* UIViewController+KNNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KNNavigation.h"; sourceTree = "<group>"; };
 		012B2E281C0FF17100330411 /* UIViewController+KNNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KNNavigation.m"; sourceTree = "<group>"; };
 		012B2E2F1C0FF1EC00330411 /* UIView+GHYView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GHYView.h"; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 				012B2E231C0FF17100330411 /* KNNavigationDefines.h */,
 				012B2E241C0FF17100330411 /* KNNavigationItem.h */,
 				012B2E251C0FF17100330411 /* KNNavigationItem.m */,
-				012B2E261C0FF17100330411 /* navigationbar_filter_background_highlighted@2x.png */,
 				012B2E271C0FF17100330411 /* UIViewController+KNNavigation.h */,
 				012B2E281C0FF17100330411 /* UIViewController+KNNavigation.m */,
 			);
@@ -312,7 +309,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				012B2E071C0FF10800330411 /* LaunchScreen.storyboard in Resources */,
-				012B2E2D1C0FF17100330411 /* navigationbar_filter_background_highlighted@2x.png in Resources */,
 				012B2E041C0FF10800330411 /* Assets.xcassets in Resources */,
 				012B2E021C0FF10800330411 /* Main.storyboard in Resources */,
 				012B2E291C0FF17100330411 /* bton_back_normal@2x.png in Resources */,
