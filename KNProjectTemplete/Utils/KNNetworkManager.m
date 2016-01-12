@@ -26,7 +26,7 @@
     [self.requestSerializer setTimeoutInterval:60.0f];
     self.responseSerializer = [AFJSONResponseSerializer serializer];
     self.responseSerializer.acceptableContentTypes = [NSSet
-                                                             setWithObjects:@"application/json", @"text/html", @"text/plain", nil];
+                    setWithObjects:@"application/json", @"text/html", @"text/plain", nil];
     
     AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     securityPolicy.allowInvalidCertificates = YES;

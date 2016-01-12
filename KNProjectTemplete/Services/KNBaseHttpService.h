@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "KNNetworkManager.h"
 
 @interface KNBaseHttpService : NSObject
+
+- (void)postUrl:(NSString *)url
+          parms:(NSDictionary *)parms
+       completeHandler:(void(^)(KNHTTPReturnCode code,id responseObject))completeHandler;
 
 - (void)postUrl:(NSString *)url
           parms:(NSDictionary *)parms

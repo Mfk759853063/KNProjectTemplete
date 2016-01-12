@@ -27,8 +27,6 @@ typedef NS_ENUM(NSUInteger, KNHTTPReturnCode){
     KNHTTPReturnError,
 };
 
-typedef void(^completeHandlers)(id values,...);
-
 @interface KNNetworkManager : AFHTTPRequestOperationManager
 
 + (instancetype)sharedManager;

@@ -10,6 +10,14 @@
 
 @implementation KNBaseHttpService
 
+- (void)postUrl:(NSString *)url
+          parms:(NSDictionary *)parms
+        completeHandler:(void (^)(KNHTTPReturnCode, id))completeHandler {
+    [self postUrl:url parms:parms complete:^(KNHTTPReturnCode code, AFHTTPRequestOperation *operation, id responseObject) {
+        completeHandler?completeHandler(code,responseObject):nil;
+    }];
+}
+
 - (void)postUrl:(NSString *)url parms:(NSDictionary *)parms complete:(void(^)(KNHTTPReturnCode code,AFHTTPRequestOperation *operation,id responseObject))complete
 {
     [[KNNetworkManager sharedManager] POST:url parameters:parms success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
