@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "KNTestService.h"
+#import "MBProgressHUD.h"
 
 @interface ViewController ()
 
@@ -18,21 +20,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.kn_navigationBar.title = @"Hello World";
-    self.view.backgroundColor = [UIColor redColor];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        UIViewController *vc = [[ViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
+    self.view.backgroundColor = [UIColor whiteColor];
+    KNTestService *service = [KNTestService new];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [service requestTestAPI:@"http://sunnyvalue.github.io/MVP/food.json" parms:nil success:^(id operation, id response) {
+            
+        } faild:^(NSError *error, id operation) {
+            
+        }];
     });
     
-    if (1) {
-        UIImage *backImage = [UIImage imageNamed:@"bton_back_normal"];
-        __weak ViewController *weakSelf = self;
-        self.kn_navigationBar.leftItem = [[KNNavigationItem alloc] initWithItemSize:CGSizeMake(100, 44) title:@"" image:backImage handler:^(id sender) {
-            [weakSelf.navigationController popViewControllerAnimated:YES];
-        }];
-    }
-
 }
 
 - (void)didReceiveMemoryWarning {

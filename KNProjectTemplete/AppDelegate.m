@@ -19,10 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     KNNavigationController *nav1 = [[KNNavigationController alloc] initWithRootViewController:[[ViewController alloc] init] ];
     self.window.rootViewController = nav1;
-    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor whiteColor];
     return YES;
 }
 

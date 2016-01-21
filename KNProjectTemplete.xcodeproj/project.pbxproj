@@ -22,6 +22,7 @@
 		012B2E341C0FF29900330411 /* KNNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B2E331C0FF29900330411 /* KNNetworkManager.m */; };
 		012B2E391C0FF9DB00330411 /* KNBaseHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B2E381C0FF9DB00330411 /* KNBaseHttpService.m */; };
 		012B2E3D1C0FFB7300330411 /* KNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B2E3C1C0FFB7300330411 /* KNBaseViewController.m */; };
+		AF1886E01C4F917600F4351E /* KNTestService.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1886DF1C4F917600F4351E /* KNTestService.m */; };
 		FE3C612A55FAA50B21B3D2C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B7AE6DF5F6B253EB0C5C26 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		012B2E3E1C0FFCC700330411 /* KNProjectTemplete.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNProjectTemplete.pch; sourceTree = "<group>"; };
 		23B7AE6DF5F6B253EB0C5C26 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BE0EA0AD45F35734B4CF91 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AF1886DE1C4F917600F4351E /* KNTestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTestService.h; sourceTree = "<group>"; };
+		AF1886DF1C4F917600F4351E /* KNTestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTestService.m; sourceTree = "<group>"; };
 		ED1FFE164169480A2015FE8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +204,8 @@
 			children = (
 				012B2E371C0FF9DB00330411 /* KNBaseHttpService.h */,
 				012B2E381C0FF9DB00330411 /* KNBaseHttpService.m */,
+				AF1886DE1C4F917600F4351E /* KNTestService.h */,
+				AF1886DF1C4F917600F4351E /* KNTestService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -370,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1886E01C4F917600F4351E /* KNTestService.m in Sources */,
 				012B2DFF1C0FF10800330411 /* ViewController.m in Sources */,
 				012B2E2B1C0FF17100330411 /* KNNavigationController.m in Sources */,
 				012B2E391C0FF9DB00330411 /* KNBaseHttpService.m in Sources */,

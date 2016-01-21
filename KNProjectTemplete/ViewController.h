@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KNBaseViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : KNBaseViewController
 
 
 @end

@@ -9,24 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
 
-/**
- *  网络返回类型
- */
-typedef NS_ENUM(NSUInteger, KNHTTPReturnCode){
-    /**
-     *  成功
-     */
-    KNHTTPReturnSuccess,
-    /**
-     *  失败
-     */
-    KNHTTPReturnFiled,
-    /**
-     *  错误
-     */
-    KNHTTPReturnError,
-};
-
 @interface KNNetworkManager : AFHTTPRequestOperationManager
 
 + (instancetype)sharedManager;
