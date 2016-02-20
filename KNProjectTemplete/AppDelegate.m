@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "KNNavigationController.h"
 #import "ViewController.h"
+#import "KNMeilishuoHomePageViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    KNNavigationController *nav1 = [[KNNavigationController alloc] initWithRootViewController:[[ViewController alloc] init] ];
+    KNNavigationController *nav1 = [[KNNavigationController alloc] initWithRootViewController:[[KNMeilishuoHomePageViewController alloc] init] ];
     self.window.rootViewController = nav1;
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
